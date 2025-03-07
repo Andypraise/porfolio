@@ -176,6 +176,9 @@ section {
   font-size: 34px;
   margin-bottom: 20px;
 }
+#contact li {
+  list-style: none;
+}
 /* Footer */
 footer {
   background: #2c3e50;
