@@ -208,8 +208,8 @@ footer {
 
     top: 4.5rem;
     width: 100vw;
-    height: 155px;
-    left: 1px;
+    height: 200px;
+    left: 5px;
   }
   nav {
     background-color: rgb(114, 82, 19);
@@ -219,8 +219,7 @@ footer {
     position: fixed;
   }
   .visible li {
-    margin-top: 0.5rem;
-
+    margin-top: 0.4rem;
     border-bottom: 1px solid black;
   }
   nav .logo {
@@ -322,7 +321,6 @@ footer {
     display: block;
     margin-top: 10px;
     padding: 10px;
-    position: relative;
   }
   .menu img {
     width: 35px;
@@ -334,7 +332,7 @@ footer {
 
   .stat {
     display: none;
-    right: 15px;
+    right: 5px;
     top: 2rem;
     position: absolute;
   }
