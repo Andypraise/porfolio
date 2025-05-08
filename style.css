@@ -10,7 +10,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
-header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +22,7 @@ header {
 
   z-index: 1000;
 }
-header nav ul {
+nav ul {
   display: flex;
   flex-direction: row;
   gap: 3rem;
@@ -46,6 +46,12 @@ nav a:active {
   font-size: 36px;
   color: rgba(12, 11, 11, 0.603);
 }
+.menu {
+  display: none;
+}
+.stat {
+  display: none;
+}
 .cta-button {
   background: #1e5631;
   color: white;
@@ -59,6 +65,7 @@ nav a:active {
   background: #c2a661;
   transform: scale(1.05);
 }
+
 /* styling main */
 
 section {
@@ -89,7 +96,7 @@ section {
 .hero-image img {
   width: 250px;
 
-  border-radius: 10rem;
+  border-radius: 50%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 /* styling about */
@@ -108,7 +115,9 @@ section {
   font-size: 32px;
   margin-bottom: 20px;
 }
-
+#about li {
+  list-style: none;
+}
 #about p {
   font-size: 26px;
   max-width: 800px;
@@ -187,24 +196,44 @@ footer {
   padding: 20px;
   font-size: 20px;
 }
-
+.store {
+  display: none;
+}
 /*mobile Responsive Design */
 @media (max-width: 768px) {
-  nav {
+  nav ul {
     display: none;
+    background-color: #1e5631;
+    position: absolute;
+
+    top: 4.5rem;
+    width: 100vw;
+    height: 155px;
+    left: 1px;
   }
-  header {
-    background-color: rgb(121, 88, 5);
+  nav {
+    background-color: rgb(114, 82, 19);
     display: flex;
-    flex-direction: column;
+
     width: 100vw;
     position: fixed;
   }
-  header .logo {
-    font-size: 1rem;
+  .visible li {
+    margin-top: 0.5rem;
+
+    border-bottom: 1px solid black;
+  }
+  nav .logo {
+    font-size: 20px;
     padding-top: 0.6rem;
     font-weight: 900;
-    color: white;
+    color: black;
+  }
+  .cta-button {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 10px;
   }
   .hero {
     display: flex;
@@ -287,6 +316,31 @@ footer {
   }
   #contact h2 {
     font-size: 1.5rem;
+  }
+
+  .menu {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+  }
+  .menu img {
+    width: 35px;
+    height: 35px;
+  }
+  .visible {
+    display: block;
+  }
+
+  .stat {
+    display: none;
+    right: 15px;
+    top: 2rem;
+    position: absolute;
+  }
+  .stat img {
+    width: 30px;
+    height: 30px;
   }
   footer {
     font-size: 0.7rem;
