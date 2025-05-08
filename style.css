@@ -228,6 +228,9 @@ footer {
     font-weight: 900;
     color: black;
   }
+  nav a:hover {
+    text-decoration: none;
+  }
   .cta-button {
     width: 100px;
     height: 40px;
