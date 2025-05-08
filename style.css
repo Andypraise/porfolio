@@ -206,10 +206,10 @@ footer {
     background-color: #1e5631;
     position: absolute;
 
-    top: 4.5rem;
+    top: 4.8rem;
     width: 100vw;
     height: 200px;
-    left: 5px;
+    right: -1px;
   }
   nav {
     background-color: rgb(114, 82, 19);
@@ -320,6 +320,7 @@ footer {
   .menu {
     display: block;
     margin-top: 10px;
+    right: 10px;
   }
   .menu img {
     width: 35px;
