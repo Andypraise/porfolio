@@ -276,7 +276,7 @@ footer {
     font-size: 22px;
   }
   #about p {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.3;
     width: 95%;
     padding: 0;
@@ -313,7 +313,7 @@ footer {
     font-size: 22px;
   }
   #services li {
-    font-size: 17px;
+    font-size: 15px;
     text-align: left;
   }
   #contact {
@@ -326,10 +326,11 @@ footer {
   }
   #contact i {
     gap: 1rem;
+    font-size: 12px;
   }
 
   #contact h3 {
-    font-size: 15px;
+    font-size: 17px;
     padding-top: 2.5rem;
   }
   #contact h2 {
